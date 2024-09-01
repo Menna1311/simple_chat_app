@@ -1,5 +1,5 @@
 import 'package:chat_app/constant.dart';
-import 'package:chat_app/utils/snackBar.dart';
+import 'package:chat_app/utils/snack_bar.dart';
 import 'package:chat_app/widgets/customtextField.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

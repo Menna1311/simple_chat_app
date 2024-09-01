@@ -38,7 +38,7 @@ class ChatScreen extends StatelessWidget {
                         klogo,
                         height: 50,
                       ),
-                      Text('Chat'),
+                      const Text('Chat'),
                     ],
                   ),
                 ),
@@ -77,20 +77,22 @@ class ChatScreen extends StatelessWidget {
                         },
                         decoration: InputDecoration(
                           hintText: 'send message',
-                          suffixIcon: Icon(Icons.send),
+                          suffixIcon: const Icon(Icons.send),
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(18),
-                              borderSide: BorderSide(color: Colors.black)),
+                              borderSide:
+                                  const BorderSide(color: Colors.black)),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(18),
-                              borderSide: BorderSide(color: Colors.black)),
+                              borderSide:
+                                  const BorderSide(color: Colors.black)),
                         ),
                       ),
                     )
                   ],
                 ));
           } else {
-            return Text('Loading...');
+            return const Text('Loading...');
           }
         });
   }
@@ -98,7 +100,7 @@ class ChatScreen extends StatelessWidget {
   void _scrollDown() {
     _controller.animateTo(
       _controller.position.maxScrollExtent,
-      duration: Duration(seconds: 2),
+      duration: const Duration(seconds: 2),
       curve: Curves.fastOutSlowIn,
     );
   }
