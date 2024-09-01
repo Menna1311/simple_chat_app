@@ -1,4 +1,4 @@
-import 'package:chat_app/Login_cubit/login_cubit.dart';
+import 'package:chat_app/cubits/Login_cubit/login_cubit.dart';
 import 'package:chat_app/constant.dart';
 import 'package:chat_app/utils/snack_bar.dart';
 import 'package:chat_app/widgets/customtextField.dart';
