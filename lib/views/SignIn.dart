@@ -1,5 +1,6 @@
 import 'package:chat_app/cubits/Login_cubit/login_cubit.dart';
 import 'package:chat_app/constant.dart';
+import 'package:chat_app/cubits/chat_cubit/chat_cubit.dart';
 import 'package:chat_app/utils/snack_bar.dart';
 import 'package:chat_app/widgets/customtextField.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +18,7 @@ class Signin extends StatelessWidget {
         if (state is LoginSuccess) {
           Navigator.of(context)
               .pushReplacementNamed('ChatPage', arguments: email);
+          BlocProvider.of<ChatCubit>(context).getmessages();
         } else if (state is LoginFailed) {
           showSnackBar(context, state.errormessage);
         } else {
